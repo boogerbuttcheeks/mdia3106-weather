@@ -28,7 +28,7 @@ export default function Home() {
     return () => {
       grabWeather.current = true;
     }
-  }, [])
+  }, [grabWeather.current])
 
   const current = new Date()
   const date = `${current.getDate()}/${current.getMonth() + 1}/${current.getFullYear()}`
